@@ -1,0 +1,37 @@
+
+# Computer Vision Assignment
+
+Overview:
+
+This assignment focuses on training an instance segmentation model using YOLOv9 for clothes segmentation in the deepfashion dataset. The model is optimized for OpenVINO and performance is analyzed across various metrics.
+
+Steps - 
+Data Preparation:
+
+Download the deepfashion dataset and create a sample with 500 images.
+Divide the sample into 7:2:1 splits for training, validation, and testing.
+Dataset Conversion:
+
+Convert the sample dataset into MSCOCO and then into YOLO format for training.
+Model Training:
+
+Modify the YOLOv9 training file to adjust hyperparameters using a config file.
+Train a YOLOv9-c model on the prepared dataset using available GPU/CPU resources.
+Performance Evaluation:
+
+Calculate performance metrics on validation and test splits.
+Provide a detailed analysis of model performance and suggest improvements.
+Determine reliable metrics for performance evaluation and explain reasoning.
+Model Optimization:
+
+Optimize the model for ONNX and OpenVINO format for deployment.
+Visualize predictions of PyTorch, ONNX, and OpenVINO models on sample test images.
+Latency and Throughput Comparison:
+
+Compare the latency and throughput of PyTorch, ONNX, and OpenVINO models on the test set.
+Plot a bar graph for visualization.
+Dockerfile Creation:
+
+Create a Dockerfile with CUDA and OpenVINO support for training on GPU and inference on Intel CPU.
+
+
